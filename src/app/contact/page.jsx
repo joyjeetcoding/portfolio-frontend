@@ -34,13 +34,13 @@ const ContactsPage = () => {
 
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">CONTACT ME</h1>
+          <h1 className="text-5xl font-bold">GET IN TOUCH</h1>
           <p className="py-6">
           Please feel free to utilize the form below to get in touch with me. I welcome any inquiries or opportunities and will respond promptly to your message. Thank you for considering reaching out
           </p>
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form className="card-body">
+          <form className="card-body" onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Your Name"

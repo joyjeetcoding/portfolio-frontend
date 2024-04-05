@@ -30,7 +30,7 @@ const useGetInstitute = () => {
     };
 
     getInstitutepage();
-  }, [institutebox]);
+  }, []);
 
   return {  institutebox };
 };

@@ -29,8 +29,8 @@ const singleWord = {
 
 const AnimatedText = ({ text, className = "" }) => {
   return (
-    <div className="w-full ">
-      <div className="">
+    <div className="">
+      <div className="px-4 lg:px-0">
         <motion.h1
         variants={quote}
         initial="initial"

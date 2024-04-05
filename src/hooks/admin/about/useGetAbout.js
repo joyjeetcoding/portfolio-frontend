@@ -24,7 +24,7 @@ const useGetAbout = () => {
       }
     };
     getAbout();
-  }, [aboutbox]);
+  }, []);
 
   return { loading, aboutbox };
 };
