@@ -53,7 +53,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="font-submain lg:font-main font-semibold lg:font-bold w-full relative px-2 py-4 lg:navbar">
+    <header className="font-submain lg:font-main font-semibold lg:font-bold w-full relative px-2 py-4 lg:navbar z-10">
       {/* Other devices view */}
       <div className="hidden lg:flex justify-between w-full relative navbar">
         <div className="absolute left-10">
