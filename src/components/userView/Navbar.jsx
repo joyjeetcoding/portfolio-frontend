@@ -154,9 +154,9 @@ const Navbar = () => {
           }`}
         ></span>
       </button>
-
+          <h1 className="text-center absolute top-2 left-1/2 -translate-x-1/2 lg:hidden font-extrabold font-portfolio text-base md:text-lg tracking-wider">My Portfolio</h1>
       <div
-        className={`fixed flex flex-col justify-center items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-3 rounded-xl md:w-[50%] border border-black backdrop-blur-md shadow-2xl py-10 lg:hidden ${
+        className={`fixed flex flex-col justify-center items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-3 rounded-xl md:w-[50%] border border-black bg-[#000000CC] text-white backdrop-blur-md shadow-2xl py-10 lg:hidden ${
           nav ? "block" : "hidden"
         }`}
       >

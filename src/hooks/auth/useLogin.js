@@ -42,7 +42,10 @@ const useLogin = () => {
       }
       console.log(data);
 
-      localStorage.setItem("admin-user", JSON.stringify(data));
+      if (typeof window !== "undefined") {
+        // Check if running in the client-side environment
+        localStorage.setItem("admin-user", JSON.stringify(data));
+      }
 
       setAuthUser(data);
       

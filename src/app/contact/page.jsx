@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import Contact from "../../assets/Contact.png";
 import { useState } from "react";
 import usePostContact from "@/hooks/admin/contact/usePostContact";
 import { Toaster } from "react-hot-toast";
@@ -34,43 +32,46 @@ const ContactsPage = () => {
 
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">GET IN TOUCH</h1>
-          <p className="py-6">
+          <h1 className="text-lg lg:text-5xl font-extrabold">GET IN TOUCH</h1>
+          <p className="py-6 text-xs lg:text-lg">
           Please feel free to utilize the form below to get in touch with me. I welcome any inquiries or opportunities and will respond promptly to your message. Thank you for considering reaching out
           </p>
         </div>
-        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="card shrink-0 lg:w-full w-[90%] lg:max-w-sm shadow-2xl max-w-sm bg-base-100">
           <form className="card-body" onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Your Name"
-              className="input input-bordered w-full max-w-xs my-2 p-6"
+              className="input input-bordered w-full max-w-xs my-2 p-6 text-xs lg:text-lg"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="input input-bordered w-full max-w-xs my-2 p-6"
+              className="input input-bordered w-full max-w-xs my-2 p-6 text-xs lg:text-lg"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
             <input
               type="text"
               placeholder="Subject"
-              className="input input-bordered w-full max-w-xs my-2 p-6"
+              className="input input-bordered w-full max-w-xs my-2 p-6 text-xs lg:text-lg"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
+              required
             />
             <textarea
               type="text"
               placeholder="Your Message"
-              className="textarea textarea-bordered w-full max-w-xs my-2 p-6 size-40"
+              className="textarea textarea-bordered w-full max-w-xs my-2 p-6 size-40 text-xs lg:text-lg"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
 
-            <button className="btn  btn-primary my-2 w-full">
+            <button className="btn  btn-primary my-2 w-full text-xs lg:text-lg">
               {loading ? (
                 <span className="loading loading-dots"></span>
               ) : (

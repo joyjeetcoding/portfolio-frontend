@@ -8,10 +8,10 @@ const Details = ({ instituteName, insituteYear, degree }) => {
     <li className="py-4">
       <FaRegDotCircle size={30} className="absolute -left-7 lg:-left-20 md:translate-x-1 md:-left-[4rem]" />
       <div className="card bg-base-100 shadow-xl">
-        <div className="card-body">
-          <h2 className="card-title">{instituteName}</h2>
-          <p>{degree}</p>
-          <span>{insituteYear}</span>
+        <div className="card-body font-submain">
+          <h2 className="card-title text-sm md:text-base lg:text-xl">{instituteName}</h2>
+          <p className="text-xs md:text-sm lg:text-lg">{degree}</p>
+          <span className="text-xs md:text-sm lg:text-lg">{insituteYear}</span>
         </div>
       </div>
     </li>
@@ -24,7 +24,7 @@ const Education = () => {
   return (
     <div>
       <div className="py-14">
-        <h1 className="text-center text-2xl md:text-4xl lg:text-6xl  font-main font-extrabold underline">
+        <h1 className="text-center text-2xl md:text-4xl  font-main font-extrabold underline">
           ACADEMIC BACKGROUND
         </h1>
 

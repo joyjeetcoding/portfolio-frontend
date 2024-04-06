@@ -23,7 +23,7 @@ const useGetProjects = () => {
     };
 
     getProjects();
-  }, [projectbox]);
+  }, []);
 
   return { projectbox };
 };

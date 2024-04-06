@@ -10,12 +10,12 @@ const AboutPage = () => {
 
   return (
     <div>
-      <div className="bg-base-200">
+      <div className="bg-base-200 min-h-screen">
         <>
           {loading ? (
             <div className="h-screen w-full flex flex-col justify-center items-center">
               <span className="loading loading-dots loading-lg"></span>
-              <p className="text-center">
+              <p className="text-center px-4">
                 Almost there! Just a sprinkle of code magic left to unveil my
                 story
               </p>

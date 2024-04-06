@@ -14,7 +14,8 @@ module.exports = {
       },
       fontFamily: {
         main: "Montserrat",
-        submain: "Roboto Slab"
+        submain: "Roboto Slab",
+        portfolio: "Pacifico"
       }
     },
   },
