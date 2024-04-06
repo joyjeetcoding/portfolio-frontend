@@ -42,7 +42,7 @@ const AboutPage = () => {
                   <h1 className="text-2xl lg:text-4xl font-extrabold text-center py-5 underline">
                     WHO I AM
                   </h1>
-                  <p className="px-6 font-medium lg:text-xl text-center">
+                  <p className="px-6 text-sm md:text-base font-medium lg:text-lg text-center">
                     {item.about}
                   </p>
                 </div>
