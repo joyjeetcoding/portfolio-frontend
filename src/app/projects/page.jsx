@@ -2,7 +2,6 @@
 import useGetSkills from "@/hooks/admin/skills/useGetSkills";
 import Image from "next/image";
 import Skills from "@/assets/Skills.png";
-import useGetSkills from "@/hooks/admin/skills/useGetSkills";
 import AnimatedText from "@/components/animatedText/AnimatedText";
 import ProjectsPageUserView from "@/components/userView/ProjectsPageUserView";
 
