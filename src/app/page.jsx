@@ -15,7 +15,7 @@ export default function Home() {
       {loadingforFrontBox ? (
         <div className="h-screen w-full flex flex-col justify-center items-center">
           <span className="loading loading-dots loading-lg"></span>
-          <p className="text-center p-2">Just a moment! Preparing to welcome you to my digital haven</p>
+          <p className="text-center p-2">Just a moment! It will take a few seconds to welcome you to my digital place</p>
         </div>
       ) : (
         <>
