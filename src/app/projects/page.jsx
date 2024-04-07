@@ -1,6 +1,5 @@
 "use client";
 import useGetSkills from "@/hooks/admin/skills/useGetSkills";
-("use client");
 import Image from "next/image";
 import Skills from "@/assets/Skills.png";
 import useGetSkills from "@/hooks/admin/skills/useGetSkills";

@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
-import Hero2 from "../assets/Hero2.png";
 import useGetTiteSummary from "@/hooks/admin/frontpage/useGetTiteSummary";
 import AnimatedText from "@/components/animatedText/AnimatedText";
 import { useRouter } from "next/navigation";
-// import Hero2 from "@/assets/Hero2.png";
 import Hero2 from "@/assets/Hero2.png";
 
 export default function Home() {
