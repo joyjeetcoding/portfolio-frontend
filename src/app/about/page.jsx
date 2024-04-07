@@ -1,6 +1,5 @@
 "use client";
 import useGetAbout from "@/hooks/admin/about/useGetAbout";
-import Demo from "../../assets/Demo.png";
 import Image from "next/image";
 import Education from "@/components/userView/Education";
 import AnimatedText from "@/components/animatedText/AnimatedText";

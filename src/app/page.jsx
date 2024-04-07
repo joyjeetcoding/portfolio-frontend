@@ -4,8 +4,8 @@ import Demo from "../assets/Demo.png";
 import useGetTiteSummary from "@/hooks/admin/frontpage/useGetTiteSummary";
 import AnimatedText from "@/components/animatedText/AnimatedText";
 import { useRouter } from "next/navigation";
-import About from "@/assets/About.png"
-
+// import Hero1 from "@/assets/Hero1.png";
+import Hero2 from "@/assets/Hero2.png";
 
 export default function Home() {
   const { loadingforFrontBox, frontbox } = useGetTiteSummary();
@@ -25,7 +25,7 @@ export default function Home() {
           <div className="w-full bg-gradient-to-l from-cyan-900 to-gray-900 text-white h-screen flex flex-col lg:flex-row justify-center lg:hidden">
             <div className="lg:w-full">
               <Image
-                src={About}
+                src={Hero2}
                 className="mx-auto w-[55%] h-full  md:w-[35%] lg:w-[60%] lg:h-[90%]"
               />
             </div>
@@ -50,7 +50,7 @@ export default function Home() {
           {/* For other devices like laptop TV */}
           <div className="hero min-h-screen bg-gradient-to-l from-cyan-900 to-gray-900 text-white hidden lg:flex justify-center items-center">
             <div className="hero-content flex-col lg:flex-row">
-              <Image src={About} className="max-w-sm rounded-lg shadow-2xl" />
+              <Image src={Hero2} className="max-w-sm rounded-lg shadow-2xl" />
               {frontbox.map((item) => (
                 <div id={item._id}>
                   <AnimatedText
