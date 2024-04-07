@@ -18,7 +18,7 @@ const CustomLinkforMobile = ({ href, title, className = "", nav }) => {
     >
       {title}
       <span
-        className={`h-[1px] inline-block bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h-[1px] inline-block bg-white absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           pathName.startsWith(href) && href !== "/" ? "w-full" : "w-0"
         }`}
       ></span>
@@ -36,7 +36,7 @@ const CustomLinkforOtherDevices = ({ href, title, className = ""}) => {
     >
       {title}
       <span
-        className={`h-[1px] inline-block bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h-[1px] inline-block bg-white absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           pathName.startsWith(href) && href !== "/" ? "w-full" : "w-0"
         }`}
       ></span>
@@ -53,7 +53,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="font-submain lg:font-main font-semibold lg:font-bold w-full relative px-2 py-4 lg:navbar z-10">
+    <header className="bg-gradient-to-l from-cyan-900 to-gray-900 text-white font-submain lg:font-main font-semibold lg:font-bold w-full relative px-2 py-4 lg:navbar z-10">
       {/* Other devices view */}
       <div className="hidden lg:flex justify-between w-full relative navbar">
         <div className="absolute left-10">
@@ -139,24 +139,24 @@ const Navbar = () => {
         onClick={handleNav}
       >
         <span
-          className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+          className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
             nav ? "rotate-45 translate-y-1" : "-translate-y-0.5"
           }`}
         ></span>
         <span
-          className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+          className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
             nav ? "opacity-0" : "opacity-100"
           }`}
         ></span>
         <span
-          className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+          className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
             nav ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
           }`}
         ></span>
       </button>
           <h1 className="text-center absolute top-2 left-1/2 -translate-x-1/2 lg:hidden font-extrabold font-portfolio text-base md:text-lg tracking-wider">My Portfolio</h1>
       <div
-        className={`fixed flex flex-col justify-center items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-3 rounded-xl md:w-[50%] border border-black bg-[#000000CC] text-white backdrop-blur-md shadow-2xl py-10 lg:hidden ${
+        className={`fixed flex flex-col justify-center items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-3 rounded-xl md:w-[50%] border-gray-300 border-4  text-white bg-[#333333] bg-opacity-15 backdrop-blur-lg shadow-2xl py-10 lg:hidden ${
           nav ? "block" : "hidden"
         }`}
       >

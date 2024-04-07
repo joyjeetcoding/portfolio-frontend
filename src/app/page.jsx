@@ -4,6 +4,8 @@ import Demo from "../assets/Demo.png";
 import useGetTiteSummary from "@/hooks/admin/frontpage/useGetTiteSummary";
 import AnimatedText from "@/components/animatedText/AnimatedText";
 import { useRouter } from "next/navigation";
+import About from "@/assets/About.png"
+
 
 export default function Home() {
   const { loadingforFrontBox, frontbox } = useGetTiteSummary();
@@ -11,7 +13,7 @@ export default function Home() {
   const router = useRouter()
 
   return (
-    <main className="bg-base-200">
+    <main className="bg-gradient-to-l from-cyan-900 to-gray-900 text-white">
       {loadingforFrontBox ? (
         <div className="h-screen w-full flex flex-col justify-center items-center">
           <span className="loading loading-dots loading-lg"></span>
@@ -20,10 +22,10 @@ export default function Home() {
       ) : (
         <>
           {/* For Mobile devices Tablets */}
-          <div className="w-full h-screen flex flex-col lg:flex-row justify-center lg:hidden">
+          <div className="w-full bg-gradient-to-l from-cyan-900 to-gray-900 text-white h-screen flex flex-col lg:flex-row justify-center lg:hidden">
             <div className="lg:w-full">
               <Image
-                src={Demo}
+                src={About}
                 className="mx-auto w-[55%] h-full  md:w-[35%] lg:w-[60%] lg:h-[90%]"
               />
             </div>
@@ -46,9 +48,9 @@ export default function Home() {
           </div>
 
           {/* For other devices like laptop TV */}
-          <div className="hero min-h-screen bg-base-200 hidden lg:flex justify-center items-center">
+          <div className="hero min-h-screen bg-gradient-to-l from-cyan-900 to-gray-900 text-white hidden lg:flex justify-center items-center">
             <div className="hero-content flex-col lg:flex-row">
-              <Image src={Demo} className="max-w-sm rounded-lg shadow-2xl" />
+              <Image src={About} className="max-w-sm rounded-lg shadow-2xl" />
               {frontbox.map((item) => (
                 <div id={item._id}>
                   <AnimatedText
@@ -56,10 +58,10 @@ export default function Home() {
                     className="self-center text-2xl font-bold md:text-5xl lg:text-7xl  flex justify-center items-center flex-wrap lg:justify-normal"
                   />
                   {/* <h1 className="text-5xl font-bold">Box Office News!</h1> */}
-                  <p className="text-sm md:text-2xl lg:text-lg py-4 lg:pr-5 px-5 lg:px-0">
+                  <p className="text-sm tracking-wider md:text-2xl lg:text-lg py-4 lg:pr-5 px-5 lg:px-0">
                     {item.summary}
                   </p>
-                  <button onClick={() => router.push("/contact")} className="btn btn-primary">Reach Me Here</button>
+                  <button onClick={() => router.push("/contact")} className="btn btn-primary tracking-wide">Reach Me Here</button>
                 </div>
               ))}
             </div>

@@ -4,13 +4,15 @@ import Demo from "../../assets/Demo.png";
 import Image from "next/image";
 import Education from "@/components/userView/Education";
 import AnimatedText from "@/components/animatedText/AnimatedText";
+import About from "@/assets/About.png"
+
 
 const AboutPage = () => {
   const { loading, aboutbox } = useGetAbout();
 
   return (
     <div>
-      <div className="bg-base-200 min-h-screen">
+      <div className="bg-gradient-to-l from-cyan-900 to-gray-900  text-white min-h-screen">
         <>
           {loading ? (
             <div className="h-screen w-full flex flex-col justify-center items-center">
@@ -32,14 +34,14 @@ const AboutPage = () => {
               </div>
               <figure className="flex justify-center items-center ">
                 <Image
-                  src={Demo}
+                  src={About}
                   alt="/"
-                  className="max-w-sm rounded-2xl shadow-xl border border-black border-r-8 border-b-8 w-[60%] lg:w-[20%] lg:h-[90%] h-full p-4 md:w-[35%]"
+                  className="max-w-sm rounded-2xl shadow-xl border border-white border-r-8 border-b-8 w-[60%] lg:w-[20%] lg:h-[90%] h-full p-4 md:w-[35%]"
                 />
               </figure>
               {aboutbox.map((item) => (
                 <div id="item._id" className="font-main">
-                  <h1 className="text-2xl lg:text-4xl font-extrabold text-center py-5 underline">
+                  <h1 className="text-2xl lg:text-4xl font-extrabold text-center py-5 underline text-teal-400 tracking-wider">
                     WHO I AM
                   </h1>
                   <p className="px-6 text-sm md:text-base font-medium lg:text-lg text-center">

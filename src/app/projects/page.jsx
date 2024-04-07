@@ -11,7 +11,7 @@ const ProjectsPage = () => {
   const { loading, skillbox } = useGetSkills();
 
   return (
-    <div className="bg-base-200  min-h-screen">
+    <div className="bg-gradient-to-l from-cyan-900 to-gray-900 text-white  min-h-screen">
       {loading ? (
         <div className="h-screen w-full flex flex-col justify-center items-center">
           <span className="loading loading-dots loading-lg"></span>
@@ -21,7 +21,7 @@ const ProjectsPage = () => {
         </div>
       ) : (
         <>
-          <div className=" ">
+          <div className="">
             <div className="flex items-center justify-center">
               <h1 className=" text-4xl lg:text-6xl py-4 md:py-14 font-submain font-extrabold">
                 <AnimatedText
@@ -40,7 +40,7 @@ const ProjectsPage = () => {
               </div>
               <div className="flex justify-center items-center flex-wrap md:max-w-xs lg:max-w-md px-4">
                 {skillbox.map((item) => (
-                  <button className="btn mx-1 my-1 text-sm bg-black text-white border-2 border-black">
+                  <button className="btn mx-1 my-1 text-sm bg-gradient-to-l from-teal-800 to-sky-900 text-white">
                     {item.skill}
                   </button>
                 ))}

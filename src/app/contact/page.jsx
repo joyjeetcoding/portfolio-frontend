@@ -27,18 +27,20 @@ const ContactsPage = () => {
   };
 
   return (
-    <div className="hero min-h-screen bg-base-200 font-submain">
+    <div className="hero min-h-screen bg-gradient-to-l from-cyan-900 to-gray-900 text-white font-submain">
       <Toaster />
 
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-lg lg:text-5xl font-extrabold">GET IN TOUCH</h1>
           <p className="py-6 text-xs lg:text-lg">
-          Please feel free to utilize the form below to get in touch with me. I welcome any inquiries or opportunities and will respond promptly to your message. Thank you for considering reaching out
+            Please feel free to utilize the form below to get in touch with me.
+            I welcome any inquiries or opportunities and will respond promptly
+            to your message. Thank you for considering reaching out
           </p>
         </div>
         <div className="card shrink-0 lg:w-full w-[90%] lg:max-w-sm shadow-2xl max-w-sm bg-base-100">
-          <form className="card-body" onSubmit={handleSubmit}>
+          <form className="card-body bg-gradient-to-l from-teal-800 to-sky-900 text-black rounded-2xl" onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Your Name"

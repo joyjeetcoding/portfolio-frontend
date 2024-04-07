@@ -6,15 +6,15 @@ const ProjectsPageUserView = () => {
   const { projectbox } = useGetProjects();
 
   return (
-    <div className="">
-      <div className="py-10">
-        <h1 className="text-center text-2xl font-submain font-extrabold underline lg:text-5xl">
+    <div className="text-black">
+      <div className="pt-10">
+        <h1 className="text-center text-teal-300 text-2xl font-submain font-extrabold underline lg:text-5xl">
           PROJECTS
         </h1>
       </div>
-      <div className="px-4 md:w-full md:grid lg:grid-cols-3 md:grid-cols-2">
+      <div className="px-4 md:w-full md:grid lg:grid-cols-3 md:grid-cols-2 min-h-screen">
         {projectbox.map((item) => (
-          <div className="card mb-10 bg-base-100 mx-4 shadow-xl ">
+          <div className="card font-main tracking-wider mt-10 bg-gradient-to-l from-teal-800 to-sky-900 text-white border-2 border-white mx-4 shadow-xl ">
             <div className="card-body">
               <h2 className="card-title">{item.projectName}</h2>
               <span className="text-xs">{item.projectDate}</span>
