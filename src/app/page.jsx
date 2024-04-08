@@ -40,6 +40,7 @@ export default function Home() {
                   <p className="text-sm md:text-2xl lg:text-lg py-4 lg:pr-5 px-5 lg:px-0">
                     {item.summary}
                   </p>
+                  <button onClick={() => router.push("/contact")} className="btn btn-primary tracking-wide">Reach Me Here</button>
                 </div>
               ))}
             </div>

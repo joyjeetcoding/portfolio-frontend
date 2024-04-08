@@ -3,7 +3,7 @@ import useGetAbout from "@/hooks/admin/about/useGetAbout";
 import Image from "next/image";
 import Education from "@/components/userView/Education";
 import AnimatedText from "@/components/animatedText/AnimatedText";
-import About from "@/assets/About.png"
+import About from "@/assets/About.jpg"
 
 
 const AboutPage = () => {
