@@ -14,7 +14,7 @@ const ProjectsPage = () => {
         <div className="h-screen w-full flex flex-col justify-center items-center">
           <span className="loading loading-dots loading-lg"></span>
           <p className="text-center px-4">
-            Fueling creativity... Just a few more seconds for greatness!
+            Please be patient as the page loads. Thank you for your understanding....
           </p>
         </div>
       ) : (

@@ -1,6 +1,5 @@
 "use client";
 
-import useGetInstitute from "@/hooks/admin/institute/useGetInstitute";
 import { FaRegDotCircle } from "react-icons/fa";
 
 const Details = ({ instituteName, insituteYear, degree }) => {
@@ -19,7 +18,6 @@ const Details = ({ instituteName, insituteYear, degree }) => {
 };
 
 const Education = () => {
-  const { institutebox } = useGetInstitute();
 
   return (
     <div>
@@ -32,13 +30,18 @@ const Education = () => {
           <div className="absolute -left-4 top-0 w-[4px] h-full bg-white origin-top lg:-left-16 md:-left-12" />
 
           <ul>
-            {institutebox.map((item) => (
+            
               <Details
-                instituteName={item.instituteName}
-                degree={item.degree}
-                insituteYear={item.insituteYear}
+                instituteName="Asansol Engineering College"
+                degree="Bachelor of Technology in Computer Science & Engineering"
+                insituteYear="2021 - 2025"
               />
-            ))}
+              <Details
+                instituteName="India International School"
+                degree="All India Senior School Certificate Examination"
+                insituteYear="2019 - 2020"
+              />
+            
           </ul>
         </div>
       </div>

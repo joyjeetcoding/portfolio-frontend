@@ -30,12 +30,12 @@ const singleWord = {
 const AnimatedText = ({ text, className = "" }) => {
   return (
     <div className="">
-      <div className="px-4 lg:px-0">
+      <div className="">
         <motion.h1
         variants={quote}
         initial="initial"
         animate="animate"
-        className={`text-center ${className}`}>
+        className={` ${className}`}>
             {/* the texts will get splited to words by words */}
           {text.split(" ").map((word, index) => (
             <motion.span 
