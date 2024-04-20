@@ -46,6 +46,8 @@ const CustomLinkforOtherDevices = ({ href, title, className = ""}) => {
 
 
 const Navbar = () => {
+  const pathname = usePathname();
+  const isAdminPath = pathname.startsWith("/admin");
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -53,7 +55,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-gradient-to-l from-cyan-900 to-gray-900 text-white font-submain lg:font-main font-semibold lg:font-bold w-full relative px-2 py-4 lg:navbar z-10">
+    <header className={`${isAdminPath ? "!hidden" : "inline-flex"} bg-gradient-to-l from-cyan-900 to-gray-900 text-white font-submain lg:font-main font-semibold lg:font-bold w-full relative px-2 py-4 lg:navbar z-10`}>
       {/* Other devices view */}
       <div className="hidden lg:flex justify-between w-full relative navbar">
         <div className="absolute left-10">
